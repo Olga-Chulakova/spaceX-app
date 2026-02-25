@@ -1,6 +1,8 @@
+import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default {
+export default defineConfig({
+  base: '/spaceX-app/',
   root: resolve(__dirname, 'src'),
   build: {
     outDir: '../dist'
@@ -10,15 +12,15 @@ export default {
   },
   publicDir: '../public/',
   css: {
-     preprocessorOptions: {
-        scss: {
-          silenceDeprecations: [
-            'import',
-            'mixed-decls',
-            'color-functions',
-            'global-builtin',
-          ],
-        },
-     },
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: [
+          'import',
+          'mixed-decls',
+          'color-functions',
+          'global-builtin',
+        ],
+      },
+    },
   },
-}
+})
