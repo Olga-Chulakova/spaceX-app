@@ -10,6 +10,7 @@
 		"deploy": "vite build --emptyOutDir && npm install gh-pages --save-dev && gh-pages -d dist"
 	},
 	"devDependencies": {
+		"gh-pages": "^6.3.0",
 		"sass": "^1.97.3",
 		"vite": "^7.3.1"
 	},
